@@ -5,13 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Using HTML, CSS and JS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
     <div class="container">
         <div class="calculator">
+            <div class="infoBox" id="infoBox">
+                <span class="exit" onclick="closeInfoBox()">X</span>
+                <h1 class="title">About</h1>
+                <p>Responsive Simple calculator using HTML, CSS, and JAVASCRIPT.</p>
+                <h3>Contact Me (developer)</h3>
+                <div class="contact">
+                    <a href="https://wa.me/+94705028061">Whatsapp</a>
+                    <a href="wa.me/+94705028061">FaceBook</a>
+                </div>
+                <span class="email">theekshanabro40@gmail.com</span>
+                <br>
+                <a class="videoLink" href="#">Watch How I create this calcualtor on youtube </a>
+            </div>
+            <span onclick="infoBox()" class="info">Info.</span>
             <h1 class="title">Calculator</h1>
             <input id="input2" type="text" class="sub"><br>
             <input id="input" type="text" class="main"><br>
@@ -43,7 +56,16 @@
             <br>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".calculator"), {
+            max: 18,
+            speed: 4000,
+            glare: true,
+            "max-glare": .2,
+        });
+    </script>
 </body>
 
 </html>
