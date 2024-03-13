@@ -68,8 +68,8 @@ function operation5() {
 }
 
 function operation6() {
-    document.getElementById("input2").value = document.getElementById("input").value + " ^ 2";
     let num = Number(document.getElementById("input").value);
+    document.getElementById("input2").value = document.getElementById("input").value + " ^ "+num;
     document.getElementById("input").value = num * num;
 }
 
@@ -128,10 +128,10 @@ function applyCursorRippleEffect(e) {
     ripple.onanimationend = () => document.body.removeChild(ripple);
 }
 
-function infoBox(){
+function infoBox() {
     document.getElementById("infoBox").style = "display: flex;";
 }
 
-function closeInfoBox(){
+function closeInfoBox() {
     document.getElementById("infoBox").style = "display: none;";
 }
