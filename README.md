@@ -6,4 +6,4 @@ Try it yourself: https://tn-master.github.io/Calculator-using-HTML-CSS-and-JS/
 
 ## Project Image
 
-<img src="Preview.jpg" width="300" />
+<img src="Preview.jpg" width="600" />
